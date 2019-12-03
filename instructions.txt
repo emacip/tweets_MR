@@ -1,0 +1,8 @@
+Instrucciones para ejecutar el analisis de sentimientos en los tweets x estados en USA
+
+1. Para generar el fichero my_dictionary.txt es necesario ejecutar python afinn_dictionary.py
+2. Arrancamos el streamer collector conectado a la streaming API de twitter. Ejecutamos fichero twitterstream.py
+3. Upload los ficheros tweet_map.py, tweet_reduce.py y el fichero con los tweets en un bucket en S3
+4. Crear un cluster con hadoop desde AWS EMR
+5. Cuando el cluster este verde, running, Add step y rellenar el formulario con la ruta S3 de nuestros archivos.
+6. Los resultados se obtendran en la ruta indicada en el paso anterior para el output
