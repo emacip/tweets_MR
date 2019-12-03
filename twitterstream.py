@@ -61,13 +61,9 @@ def fetchsamples():
     with open('tweets_2.json', 'w') as my_tweets:
         for line in response:
             status = json.loads(line.decode('utf-8'))
-            dict = {}
-            if 'delete' not in status.keys():
-                print(status)
-                dict['text'] = status['text']
-                dict['place'] = status['place']
-                print("######")
-                my_tweets.write(json.dumps(dict) + '\n')
+            if 'delete' not in status.keys() and 'status_withheld' not in status.keys():
+                print("*")
+                my_tweets.write(json.dumps(status) + '\n')
 
 
 
