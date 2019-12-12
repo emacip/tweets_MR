@@ -3,15 +3,12 @@
 
 import sys
 import json
-import urllib2
 
 
 
 sys.path.append('.')
 
-# My public dictionary in S3 to use in EMR
-content = urllib2.urlopen('https://emb-pract-hadoop.s3-eu-west-1.amazonaws.com/my_dictionary.txt')
-scores = json.load(content)
+scores = json.load(open('my_dictionary.txt'))
 
 
 for tweet in sys.stdin:
