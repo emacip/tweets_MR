@@ -27,20 +27,17 @@ class MRWordFrequencyCount(MRJob):
 				if len(location) == 2:
 					score = 0
 					words = linea.get("text").split()
+					key = location
 					for word in words:
-
 						if word in scores:
 							score += scores[word]
 						else:
 							score += 0
 						if word.startswith('#'):
-							key = word
-							value = location
-						else:
-							key = location
-							value = score
+							yield (word, 1)
+
 					if score != 0:
-						yield (key,value)
+						yield (key,score)
 		except:
 			None
 
@@ -53,13 +50,10 @@ class MRWordFrequencyCount(MRJob):
 				count += 1
 			else:
 				count += 1
-		dic = {}
-		dic["Total"] = suma
-		dic["Cont"] = count
 		if not key.startswith('#'):
-			yield (None, {key: {'Total': suma , 'Media': suma/count}})
+			yield (key, {'Total': suma , 'Media': suma/count})
 		else:
-			yield (None, {key: {'Cont': count}})
+			yield (key, {'Cont': count})
 
 
 
