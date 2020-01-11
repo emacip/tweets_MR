@@ -29,6 +29,7 @@ class MRWordFrequencyCount(MRJob):
 					words = linea.get("text").split()
 					key = location
 					for word in words:
+
 						if word in scores:
 							score += scores[word]
 						else:
