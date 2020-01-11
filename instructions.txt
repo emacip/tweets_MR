@@ -6,3 +6,8 @@ Instrucciones para ejecutar el analisis de sentimientos en los tweets x estados 
 4. Crear un cluster con hadoop desde AWS EMR
 5. Cuando el cluster este verde, running, Add step y rellenar el formulario con la ruta S3 de nuestros archivos.
 6. Los resultados se obtendran en la ruta indicada en el paso anterior para el output
+
+MRJob local instructions:
+
+1. Desde la consola se lanza el comando: python mr_job.py -r inline tweets.json o desde los parametros de pycharm se añade mr_job.py -r inline tweets.json
+2. Se ejecutas el codigo y obtenemos el resultado
