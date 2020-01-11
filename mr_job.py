@@ -17,10 +17,8 @@ class MRWordFrequencyCount(MRJob):
 	def mapper(self, _, line):
 		try:
 			linea = json.loads(line)
-			tweet = linea.get("text")
 			localizacion = linea.get("place").get("country_code")
 			localizacion2 = linea.get("place").get("country")
-			estado = linea.get("place").get("full_name")
 			if (localizacion == "US" or localizacion2 == "United States"):
 
 				location = linea.get("place").get("full_name").split(',')
@@ -48,22 +46,29 @@ class MRWordFrequencyCount(MRJob):
 
 	def reducer(self, key, values):
 		suma = 0
-		cont = 0
+		count = 0
 		for i in values:
-			if key.startswith('#'):
-				suma = 0
-				cont += 1
-			else:
+			if not key.startswith('#'):
 				suma += i
-				cont += 1
-
+				count += 1
+			else:
+				count += 1
 		dic = {}
-		dic["total"] = suma
-		dic["cont"] = cont
-		yield (None, {key: {'total': suma , 'cont': cont}})
+		dic["Total"] = suma
+		dic["Cont"] = count
+		if not key.startswith('#'):
+			yield (None, {key: {'Total': suma , 'Media': suma/count}})
+		else:
+			yield (None, {key: {'Cont': count}})
+
+
 
 	def steps(self):
-		return [MRStep(mapper=self.mapper, reducer=self.reducer)]
+		return [
+			MRStep(mapper=self.mapper,
+				   reducer=self.reducer)
+
+		]
 
 
 if __name__ == '__main__':
