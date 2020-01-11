@@ -1,27 +1,35 @@
 import sys
-from collections import Counter
+
 
 dic = {}
+vect = {}
+
 with open('reduce', 'r') as file:
     for line in file:
-        location, value = line.split('\t')
-        #value = int(value)
-
-        value = value.split('/')
-        value[1] = value[1].replace('\n', '')
-
-        if location in dic:
-            dic[location]['score'] += int(value[0])
-            if value[1] != "empty":
-               dic[location]['hashtag'].append(value[1])
+        key, value = line.split('\t')
+        if key.startswith('#'):
+            if key not in vect:
+                vect[key] = 1
+            else:
+                vect[key] += 1
         else:
-            dic[location] = {}
+            value = int(value)
+            if value != 0:
+                if key not in dic:
+                    dic[key] = {}
+                    dic[key]['total'] = {}
+                    dic[key]['score'] = {}
 
-            dic[location]['score'] = int(value[0])
-            dic[location]['hashtag'] = []
-            if value[1] != "empty":
-                dic[location]['hashtag'].append(value[1])
+                    dic[key]['total'] = 1
+                    dic[key]['score'] = value
+                else:
+                    dic[key]['total'] += 1
+                    dic[key]['score'] += value
 
 for key in dic.keys():
-    res = [key for key, value in Counter(dic[key]['hashtag']).most_common()]
-    print('{0}\t{1}'.format(key, str(dic[key]['score'])+" "+ str(res[:10])))
+    print('{0}\t{1}'.format(key, "Score : " + str(dic[key]['score'] ) + " Total : " + str(dic[key]['total'] ) + " / Media : " + str(dic[key]['score']/ dic[key]['total'])))
+
+aux = {k: v for k, v in sorted(vect.items(), reverse=True, key=lambda item: item[1])[:10]}
+
+for key in aux.keys():
+    print('{0}\t{1}'.format(key, vect[key]))

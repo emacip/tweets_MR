@@ -47,15 +47,14 @@ class MRWordFrequencyCount(MRJob):
 	def reducer(self, key, values):
 		suma = 0
 		count = 0
+
 		for i in values:
 			if not key.startswith('#'):
 				suma += i
 				count += 1
 			else:
 				count += 1
-		dic = {}
-		dic["Total"] = suma
-		dic["Cont"] = count
+
 		if not key.startswith('#'):
 			yield (None, {key: {'Total': suma , 'Media': suma/count}})
 		else:

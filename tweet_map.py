@@ -32,6 +32,7 @@ scores = json.load(open('my_dictionary.txt'))
 
 # to test the reduce only
 
+
 with open('tweets.json', 'r') as file:
     with open('reduce', 'w') as resuts:
         tweets = file.read()[:-1]
@@ -47,16 +48,17 @@ with open('tweets.json', 'r') as file:
                         score = 0
                         words = tweet_parsed['text'].split()
                         for word in words:
-                            hashtag = ''
                             if word in scores:
                                 score += scores[word]
                             else:
                                 score += 0
 
                             if word.startswith('#'):
-                                hashtag = word
+                                key = word
+                                value = location
                             else:
-                                hashtag = "empty"
+                                key = location
+                                value = str(score)
 
-                            resuts.write('{0}\t{1}'.format(location, str(score)+"/"+hashtag) + '\n')
-                            print('{0}\t{1}'.format(location, str(score)+"/"+hashtag ))
+                            resuts.write('{0}\t{1}'.format(key, value) + '\n')
+                            print('{0}\t{1}'.format(key, value))
