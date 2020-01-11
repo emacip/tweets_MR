@@ -3,12 +3,12 @@ import urllib.request
 import json
 import re
 
-# See Assignment 1 instructions or README for how to get these credentials
-access_token_key = "165726561-iIzi7s5jXRT9pmQWsaNb7xoX0CaZgeydN2ykg9Cl"
-access_token_secret = "5AVCNFZvSM6pSvb4iO5KILDXwdMSvu1nptlH4rlUw6ium"
+# Use your credentials
+access_token_key = ""
+access_token_secret = ""
 
-consumer_key = "Idl031HytYZXJB2qY487zrnF2"
-consumer_secret = "T26UQpyCRXgIeiSPlEwzB8SqGUeozkrI9OJ0RmJzUs6Zp5IUTf"
+consumer_key = ""
+consumer_secret = ""
 
 _debug = 0
 
