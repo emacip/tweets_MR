@@ -2,7 +2,8 @@ import json
 
 file_afinn = open("AFINN-111.txt")
 """
-we want to create a dictionary(K,V) from the file_afinn where we can later take the score from a key word directly.
+Creamos un diccionario con las palabras y su valor. Luego lo usaremos a la hora de cuantificar las palabras
+
 dictionary example
 
 {

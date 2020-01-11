@@ -1,0 +1,71 @@
+ME	Happines Score : 2 Total Words: 41 Total Words Value : 4  Words Mean : 0
+NJ	Happines Score : 32 Total Words: 785 Total Words Value : 41  Words Mean : 0
+MN	Happines Score : 15 Total Words: 373 Total Words Value : 23  Words Mean : 0
+CO	Happines Score : -16 Total Words: 353 Total Words Value : 23  Words Mean : -1
+NM	Happines Score : 1 Total Words: 221 Total Words Value : 16  Words Mean : 0
+WA	Happines Score : 19 Total Words: 672 Total Words Value : 32  Words Mean : 0
+NY	Happines Score : 37 Total Words: 2683 Total Words Value : 119  Words Mean : 0
+WV	Happines Score : -6 Total Words: 43 Total Words Value : 3  Words Mean : -2
+AK	Happines Score : 4 Total Words: 91 Total Words Value : 2  Words Mean : 2
+DE	Happines Score : 6 Total Words: 45 Total Words Value : 2  Words Mean : 3
+ND	Happines Score : 0 Total Words: 21 Total Words Value : 0  Words Mean : 0
+RI	Happines Score : -5 Total Words: 87 Total Words Value : 9  Words Mean : -1
+KS	Happines Score : -3 Total Words: 189 Total Words Value : 13  Words Mean : -1
+MT	Happines Score : 0 Total Words: 4 Total Words Value : 0  Words Mean : 0
+IL	Happines Score : 44 Total Words: 1164 Total Words Value : 61  Words Mean : 0
+KY	Happines Score : 6 Total Words: 301 Total Words Value : 13  Words Mean : 0
+AZ	Happines Score : 29 Total Words: 802 Total Words Value : 45  Words Mean : 0
+FL	Happines Score : 16 Total Words: 1669 Total Words Value : 72  Words Mean : 0
+OR	Happines Score : 10 Total Words: 473 Total Words Value : 20  Words Mean : 0
+NV	Happines Score : 11 Total Words: 805 Total Words Value : 38  Words Mean : 0
+WY	Happines Score : 1 Total Words: 39 Total Words Value : 1  Words Mean : 1
+MD	Happines Score : 13 Total Words: 694 Total Words Value : 32  Words Mean : 0
+MA	Happines Score : -23 Total Words: 823 Total Words Value : 40  Words Mean : -1
+MS	Happines Score : -11 Total Words: 288 Total Words Value : 22  Words Mean : -1
+TX	Happines Score : 49 Total Words: 5170 Total Words Value : 333  Words Mean : 0
+OH	Happines Score : 29 Total Words: 916 Total Words Value : 42  Words Mean : 0
+UT	Happines Score : 43 Total Words: 411 Total Words Value : 25  Words Mean : 1
+PA	Happines Score : 15 Total Words: 1105 Total Words Value : 66  Words Mean : 0
+NC	Happines Score : 47 Total Words: 929 Total Words Value : 44  Words Mean : 1
+WI	Happines Score : 10 Total Words: 253 Total Words Value : 11  Words Mean : 0
+VA	Happines Score : 0 Total Words: 988 Total Words Value : 64  Words Mean : 0
+HI	Happines Score : 6 Total Words: 172 Total Words Value : 10  Words Mean : 0
+GA	Happines Score : -52 Total Words: 1058 Total Words Value : 47  Words Mean : -2
+IN	Happines Score : 17 Total Words: 516 Total Words Value : 28  Words Mean : 0
+OK	Happines Score : 6 Total Words: 285 Total Words Value : 16  Words Mean : 0
+SD	Happines Score : 3 Total Words: 39 Total Words Value : 2  Words Mean : 1
+CT	Happines Score : 29 Total Words: 386 Total Words Value : 25  Words Mean : 1
+NH	Happines Score : 4 Total Words: 59 Total Words Value : 3  Words Mean : 1
+NE	Happines Score : -9 Total Words: 97 Total Words Value : 8  Words Mean : -2
+LA	Happines Score : -8 Total Words: 1124 Total Words Value : 65  Words Mean : -1
+CA	Happines Score : 102 Total Words: 7255 Total Words Value : 376  Words Mean : 0
+MI	Happines Score : -10 Total Words: 721 Total Words Value : 42  Words Mean : -1
+AL	Happines Score : 0 Total Words: 500 Total Words Value : 22  Words Mean : 0
+DC	Happines Score : 2 Total Words: 302 Total Words Value : 10  Words Mean : 0
+TN	Happines Score : -2 Total Words: 692 Total Words Value : 38  Words Mean : -1
+SC	Happines Score : 6 Total Words: 368 Total Words Value : 19  Words Mean : 0
+AR	Happines Score : 8 Total Words: 160 Total Words Value : 11  Words Mean : 0
+IA	Happines Score : 24 Total Words: 293 Total Words Value : 13  Words Mean : 1
+MO	Happines Score : 11 Total Words: 434 Total Words Value : 19  Words Mean : 0
+ID	Happines Score : 7 Total Words: 109 Total Words Value : 3  Words Mean : 2
+#NEvsHOU	8
+#JoeBurrow!	5
+#90DayFiance	5
+#Watchmen	5
+#WeAreTexans	5
+#pdx911	5
+#NewProfilePic	4
+#Texans	4
+#Patriots	4
+#SNFonNBC	3
+#MyTwitterAnniversary	3
+#MonarcasMorelia	3
+#RHOA	3
+#WWEStarrcade	3
+#TwitterMomentsOfTheDecade	3
+#NoTimeToDie	3
+#Christmas	2
+#SundayThoughts	2
+#Blessed	2
+#NFL	3
+count_tweets	3746
